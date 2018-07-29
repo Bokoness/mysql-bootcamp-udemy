@@ -1,0 +1,15 @@
+DELETE FROM cats WHERE name='egg';
+    - delete all cats with name egg;
+
+Tip - try to select the data you want before deleting it.
+    - for example:
+        SELECT * FROM cats WHERE name='Egg';
+        - the result should be the data to delete
+        - then:
+        DELETE FROM cats WHERE name='Egg';
+
+
+DELETE FROM cats;
+    - will delete all cats in the table;
+    - equals to SELECT * FROM cats;
+    - thats why we should specify WHERE clause all the time

@@ -1,0 +1,3 @@
+SELECT LOWER('HELLO WORLD') AS 'LOWER()';
+SELECT UPPER('hello world') AS 'UPPER()';
+

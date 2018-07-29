@@ -1,0 +1,87 @@
+=====================
+| DATABASE commands |
+=====================
+- help; : list of all MySql commands
+
+- SHOW WARNINGS; - showing errors
+
+- show databases; : showing the list of the databases we created
+
+- select @@hostname; : showing the name of the host
+
+- CREATE DATABASE <database name>; : creating a database
+
+- DROP DATABASE <database name>; deleting a database
+
+- USE <database name>; : using a specific database
+    - SELECT database(); showing the used database
+
+- SOURCE <path to file name>; using SQL file name
+    - for example: SOURCE testing/cats.sql;
+===================
+| Table commands: |
+===================
+ - CREATE TABLE - creating a new table, for example:
+    - CREATE tablename (column_name data_type, column_name data_type);
+
+- SHOW COLUMNS FROM <table name>; showing the names of the columns
+    - another way is using DESC command which stands for describe, for example:
+        - DESC <table name>
+
+- DROP TABLE <table name> delets the table
+
+========
+| NULL |
+========
+- when we dont insert value, null will be inserted instead
+    - for example: INSERT INTO CATS (name, age) VALUES ();
+        - NULL will be inserted twice
+
+- NOT NULL - defined that NULL value cannot be accepted
+    - for example: CREATE TABLE cats2 (
+                        name VARCHAR(100) NOT NULL,
+                        age INT NOT NULL
+                    );
+            - name and age could not accept NULL value
+
+===========
+| DEFAULT |
+===========
+- adds default value to column in case value is not inserted
+ - for example:
+    - CREATE TABLE cats3 (
+        name VARCHAR(20) DEFAULT 'no name provided',
+        age INT DEFAULT 99
+    );
+
+===============
+| PRIMARY KEY |
+===============
+- is an indetifier
+    CREATE TABLE unique_cats
+    (
+        cat_id INT NOT NULL,
+        name VARCHAR(100),
+        age INT,
+        PRIMARY KEY (cat_id)
+    );
+    INSERT INTO unique_cats(cat_id, name, age) VALUES(1, 'Fred', 23);
+
+==================
+| AUTO INCREMENT |
+==================
+CREATE TABLE unique_cats2 (
+    cat_id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(100),
+    age INT,
+    PRIMARY KEY (cat_id)
+);
+INSERT INTO unique_cats2(name, age) VALUES('Skippy', 4);
+
+==========
+| SOURCE |
+==========
+
+Activates sql file
+for example:
+source /Users/Bokoness/dev/Udemy-mysql-bootcamp/7_string_functions/5-upper_lower.sql

@@ -1,0 +1,17 @@
+SELECT * from cats;
+    select everything
+
+SELECT <specific column> from cats;
+    SELECT name from cats;
+
+SELECT cats_id, name, breed, age FROM cats;
+    select multiple columns from table;
+
+=========
+| WHERE |
+=========
+- SELECT * FROM cats WHERE age=4;
+    select all data from cats table only if age is 4;
+
+- SELECT * from cats WHERE name='egg';
+    select all data from cats table only is name is 'egg';

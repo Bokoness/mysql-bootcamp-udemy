@@ -1,0 +1,6 @@
+UPDATE cats SET breed='Shorthair' WHERE breed='Tabby';
+    - update cats table, set breed of all 'Tabby' to be 'shorthair';
+
+UPDATE cats SET age=14 WHERE name='Misty';
+    - update bats table set the age of Misty to be 14
+

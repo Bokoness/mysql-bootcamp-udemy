@@ -1,0 +1,25 @@
+Mysql cli commands
+    - https://dev.mysql.com/doc/refman/8.0/en/mysql-commands.html
+
+How to activate mysql cli via Windows command line? 
+    - https://dev.mysql.com/doc/refman/8.0/en/mysql.html
+    - enter the mysql directory C:\Program Files\MySQL\MySQL Server 5.6\bin
+    - then type: mysql --user=user_name --password db_password
+
+How to exit mysql cli?
+    - https://dev.mysql.com/doc/refman/8.0/en/mysql-commands.html
+    - \q
+    
+=========
+|Cloud 9|
+=========
+
+All instructions: 
+- https://community.c9.io/t/setting-up-mysql/1718
+
+How to install mysql in Cloud9?
+    - mysql-ctl start
+How to activate mysql in Cloud9?
+    - mysql-ctl cli
+
+

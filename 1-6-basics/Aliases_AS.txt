@@ -1,0 +1,5 @@
+SELECT cat_id AS id FROM cats;
+    - will select all cat_id but will represent it as 'id' only;
+
+ SELECT name as 'Cat name', breed as 'kitty breed' FROM cats;
+    - will select all name and represent it as cat name, will select all breed and will represnt it as kitty breed;
