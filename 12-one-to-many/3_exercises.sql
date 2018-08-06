@@ -41,7 +41,7 @@ ORDER BY grade DESC;
 -- exercise 3
 SELECT 
     first_name,
-    IFNULL(AVG(grade), 0) AS 'average'
+    IFNULL(AVG(grade), 0) AS average
 FROM students
 LEFT JOIN papers
     ON students.id = papers.student_id
@@ -51,10 +51,12 @@ ORDER BY average DESC;
 -- exercise 4
 SELECT 
     first_name,
-    IFNULL(AVG(grade), 0) AS 'average'
-    SELECT IF(500<1000, "YES", "NO");
+    IFNULL(AVG(grade), 0) AS average,
+    IF(AVG(grade) >= 75, "PASSING", "FAILING") AS passing_status
 FROM students
 LEFT JOIN papers
     ON students.id = papers.student_id
 GROUP BY first_name
 ORDER BY average DESC;
+
+--
